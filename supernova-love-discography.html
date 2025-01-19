@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+         
+        }
+        #background-video {
+            filter: brightness(50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+       
+        }
+        .logo-nav{
+            padding-left: 320px;
+        }
+        .con-nav{
+            display: inline-flex;
+            padding-left: 30px;
+            padding-top: 75px;
+        }
+        .con-nav li a{
+            padding-right: 20px;
+            font-family: "Roboto", serif;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        .top-nav{
+            display: inline-flex;
+        }
+        .header{
+            padding-left: 1015px;
+            padding-top: 20px;
+        }
+        .header p{
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-size: 34px;
+        }
+        .sub-header{
+            padding-left: 1138px;
+        }
+        .sub-header p{
+            font-family: "Open Sans", serif;
+            
+        }
+        .horizontal{
+            border: solid white 1px;
+            margin-left: 1050px;
+            margin-right: 46px;
+            margin-top: 20px;
+        }
+        .soundtracks{
+            padding-right: 46px;
+            padding-top: 5px;
+        }
+        .soundtracks p{
+            font-family: "Nunito Sans", serif;
+            text-align:right;
+        }
+        .music-video-short{
+            padding-left: 1078px;
+            padding-top: 70px;
+            
+        }
+        .music-video-short img{
+            filter: brightness(90%);
+            border-radius: 20px;
+            border: solid 2px;
+        }
+        .footer{
+            padding-top: 15px;
+            padding-left: 33px;
+            display: inline-flex;
+        }
+        .footer a{
+            padding-left: 15px;
+        }
+        .footer p{
+            padding-top: 10px;
+            padding-left: 630px;
+            font-family: "Roboto", serif;       
+            font-size: 15px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="logo-nav">
+            <img src="images/ive-logo-white.png" alt="IVE LOGO" height="170px">
+        </div>
+        <div class="con-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profiles.html">PROFILES</a></li> 
+            <li><a href="discography.html">DISCOGRAPHY</a></li>
+            <li><a href="music-video.html">MUSIC VIDEO</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </div>
+        
+    </div>
+    <div class="header">
+        <p>SUPERNOVA LOVE</p>
+    </div>
+    <div class="sub-header">
+        <p>2024.11.8 FRI 2PM (KST)
+        </p>
+    </div>
+    <div class="horizontal"></div>
+    <div class="soundtracks">
+        <p>Supernova Love</p>
+        <p>Supernova Love (Extended Mix)</p>
+        
+    </div>
+    <div class="music-video-short">
+        <a href=""><img src="images/HEYA/Group/group-1.jpg" alt="" height="130px"></a>
+    </div>
+    <div class="footer">
+        <a href=""><img src="images/sns_facebook.png" height="25px"></a>
+        <a href=""><img src="images/sns_instagram.png" height="25px"></a>
+        <a href=""><img src="images/sns_tiktok.png" height="25px"></a>
+        <a href=""><img src="images/sns_twitter.png" height="25px"></a>
+        <a href=""><img src="images/sns_youtube.png" height="25px"></a>
+        <p>Copyright © Sample Site, Starship Entertainment. All rights reserved.</p>
+    </div>
+    <video id="background-video" src="videos/IVE, David Guetta - Supernova Love Official Music Video.mp4" alt=""  autoplay loop muted></video>
+</body>
+</html>
