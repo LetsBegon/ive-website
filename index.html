@@ -38,7 +38,7 @@
             padding-left: 320px;
         }
         .con-nav{
-            display: inline-flex;
+            display: flex;
             padding-left: 30px;
             padding-top: 75px;
         }
@@ -46,7 +46,7 @@
             padding-right: 20px;
             font-family: "Roboto", serif;
             font-weight: bold;
-            font-size: 17px;
+            font-size: 1.1rem;
         }
         .top-nav{
             display: inline-flex;
@@ -61,7 +61,7 @@
         }
         .sub-header p{
             font-family: "Montserrat", serif;
-            font-size: 13px;
+            font-size: 0.9rem;
         }
         .horizontal{
             border: solid 1px white;
@@ -83,7 +83,7 @@
         }
         .sub-updates p{
             font-family: "Roboto", serif;
-            font-size: 14px;
+            font-size: 0.9rem;
         }
         .footer{
             padding-top: 100px;
@@ -94,11 +94,310 @@
             padding-left: 15px;
         }
         .footer p{
-            padding-top: 4px;
+           align-items: center;
             padding-left: 630px;
             font-family: "Roboto", serif;       
-            font-size: 15px; 
+            font-size: 0.9rem; 
         }
+        /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .con-nav{
+        display: none;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 12vh;
+    }
+    .header {
+        margin-left: 10px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .horizontal{
+         display: none;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 10px;
+    }
+    .sub-updates{
+        padding-left: 10px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .con-nav{
+        display: none;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 12vh;
+    }
+    .header {
+        margin-left: 10px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        display: none;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 10px;
+    }
+    .sub-updates{
+        padding-left: 10px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .con-nav{
+        display: flex;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 1rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 14vh;
+    }
+    .header {
+        margin-left: 15px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 15px;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 15px;
+    }
+    .sub-updates{
+        padding-left: 15px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+          padding-left: 22rem;
+          font-size: 0.8rem;
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .con-nav{
+        display: flex;
+        margin-left: 1rem;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 11rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 14vh;
+    }
+    .header {
+        margin-left: 15px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 15px;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 15px;
+    }
+    .sub-updates{
+        padding-left: 15px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+          display: flex;
+          margin-left: 5rem;
+          
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .con-nav{
+        display: flex;
+        margin-left: 1rem;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 20rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 17vh;
+    }
+    .header {
+        margin-left: 20px;
+    }
+    .sub-header p{
+        font-size: 0.8rem;
+    }
+    .sub-header{
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .updates p{
+        font-size: 1rem;
+    }
+    .updates{
+        padding-left: 20px;
+    }
+    .sub-updates{
+        padding-left: 20px;
+    }
+    .sub-updates p{
+        font-size: 0.9rem;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 4vh;
+    }
+    .footer p{
+          display: flex;
+        margin-left: 26rem;
+        }
+}
     </style>
 </head>
 <body>
