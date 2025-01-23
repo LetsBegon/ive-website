@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+         
+        }
+        #background-video {
+            filter: brightness(50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+       
+        }
+        .logo-nav{
+            padding-left: 320px;
+        }
+        .con-nav{
+            display: flex;
+            padding-left: 30px;
+            padding-top: 75px;
+        }
+        .con-nav li a{
+            padding-right: 20px;
+            font-family: "Roboto", serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .top-nav{
+            display: inline-flex;
+        }
+        .header{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .sub-header{
+            padding-top: 15px;
+            padding-left: 50px;
+        }
+        .sub-header p{
+            font-family: "Montserrat", serif;
+            font-size: 0.9rem;
+        }
+        .horizontal{
+            border: solid 1px white;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 830px;
+        }
+        .updates{
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+        .updates p{
+            font-family: "Roboto", serif;
+            font-weight: bold;
+        }
+        .sub-updates{
+            padding-left: 50px;
+            padding-top: 5px;
+        }
+        .sub-updates p{
+            font-family: "Roboto", serif;
+            font-size: 0.9rem;
+        }
+        .footer{
+            padding-top: 100px;
+            padding-left: 33px;
+            display: inline-flex;
+        }
+        .footer a{
+            padding-left: 15px;
+        }
+        .footer p{
+           align-items: center;
+            padding-left: 630px;
+            font-family: "Roboto", serif;       
+            font-size: 0.9rem; 
+        }
+        /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .con-nav{
+        display: none;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 12vh;
+    }
+    .header {
+        margin-left: 10px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .horizontal{
+         display: none;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 10px;
+    }
+    .sub-updates{
+        padding-left: 10px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    .con-nav{
+        display: none;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 12vh;
+    }
+    .header {
+        margin-left: 10px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        display: none;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 10px;
+    }
+    .sub-updates{
+        padding-left: 10px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .con-nav{
+        display: flex;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 1rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 14vh;
+    }
+    .header {
+        margin-left: 15px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 15px;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 15px;
+    }
+    .sub-updates{
+        padding-left: 15px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+          padding-left: 22rem;
+          font-size: 0.8rem;
+        }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .con-nav{
+        display: flex;
+        margin-left: 1rem;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 11rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 14vh;
+    }
+    .header {
+        margin-left: 15px;
+    }
+    .sub-header p{
+        font-size: 0.7rem;
+    }
+    .sub-header{
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 15px;
+    }
+    .updates p{
+        font-size: 0.8rem;
+    }
+    .updates{
+        padding-left: 15px;
+    }
+    .sub-updates{
+        padding-left: 15px;
+    }
+    .sub-updates p{
+        font-size: 0.7rem;
+    }
+    .footer{
+        padding-left: 5px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 3.5vh;
+    }
+    .footer p{
+          display: flex;
+          margin-left: 5rem;
+          
+        }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .con-nav{
+        display: flex;
+        margin-left: 1rem;
+    }
+    .con-nav li a{
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+    .sub-header p{
+        font-size: 100px;
+    }
+    .logo-nav{
+        padding: 0;
+        margin-left: 20rem;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header img{
+        height: 17vh;
+    }
+    .header {
+        margin-left: 20px;
+    }
+    .sub-header p{
+        font-size: 0.8rem;
+    }
+    .sub-header{
+        padding-left: 20px;
+        padding-top: 5px;
+    }
+    .horizontal{
+        border: solid 1px white;
+        width: 400px;
+        margin-left: 20px;
+    }
+    .updates p{
+        font-size: 1rem;
+    }
+    .updates{
+        padding-left: 20px;
+    }
+    .sub-updates{
+        padding-left: 20px;
+    }
+    .sub-updates p{
+        font-size: 0.9rem;
+    }
+    .footer{
+        padding-left: 20px;
+        padding-top: 150px;
+        
+    }
+    .footer a img{
+        height: 4vh;
+    }
+    .footer p{
+          display: flex;
+        margin-left: 26rem;
+        }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="top-nav">
+        <div class="logo-nav">
+            <img src="images/ive-logo-white.png" alt="IVE LOGO" height="170px">
+        </div>
+        <div class="con-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profiles.html">PROFILES</a></li> 
+            <li><a href="discography.html">DISCOGRAPHY</a></li>
+            <li><a href="music-video.html">MUSIC VIDEO</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </div>
+        
+    </div>
+    <div class="header">
+        <img src="images/ive-accendio-logo.png" alt="" height="120px">
+    </div>
+    <div class="sub-header">
+        <p>The fatal emotions one faces, and the dreamy <br> synth arpeggio sound and unique 808 bass sound create <br> a mysterious atmosphere. The tight trap drums and break beats <br> harmoniously combine to further complete the song.</p>
+    </div>
+    <div class="horizontal"></div>
+    <div class="updates">
+        <p>ANNOUNCEMENTS:</p>
+    </div>
+    <div class="sub-updates">
+        <p>📢 
+            250119 IVE 'SBS Ingigayo' Pre-Recording Information
+            <br>✅ Participation period
+            2025.01.17 ( 금) 2PM ~ 2:30PM (KST)</p>
+    </div>
+    <div class="footer">
+        <a href=""><img src="images/sns_facebook.png" height="25px"></a>
+        <a href=""><img src="images/sns_instagram.png" height="25px"></a>
+        <a href=""><img src="images/sns_tiktok.png" height="25px"></a>
+        <a href=""><img src="images/sns_twitter.png" height="25px"></a>
+        <a href=""><img src="images/sns_youtube.png" height="25px"></a>
+        <p>Copyright © Sample Site, Starship Entertainment. All rights reserved.</p>
+    </div>
+    <video id="background-video" src="accendio-background.webm" alt=""  autoplay loop muted></video>
+</body>
+</html>
