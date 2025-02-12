@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+         
+        }
+        #background-video {
+            filter: brightness(50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+       
+        }
+        .logo-nav{
+            padding-left: 320px;
+        }
+        .con-nav{
+            display: flex;
+        }
+        .con-nav li a{
+            padding-right: 20px;
+            font-family: "Roboto", serif;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .top-nav{
+            display: flex;
+            align-items: center;
+        }
+        .header{
+            padding-left: 0;
+            padding-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .header p{
+            font-family: "Poppins", serif;
+            font-weight: 700;
+            font-size: 34px;
+        }
+        .sub-header{
+            padding-left: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .sub-header p{
+            font-family: "Open Sans", serif;
+            font-size: 1rem;
+            
+        }
+        .horizontal{
+            border: solid white 1px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 20px;
+            width: 50%;
+            float: right;
+            
+        }
+        .soundtracks{
+            padding-right: 0;
+            padding-top: 0px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .soundtracks p{
+            font-family: "Nunito Sans", serif;
+            text-align:right;
+        }
+        .music-video-short{
+            padding-left: 0;
+            padding-top: 0;
+            float: right;
+            
+        }
+        .music-video-short img{
+            filter: brightness(90%);
+            border-radius: 20px;
+            border: solid 2px;
+        }
+        .footer{
+            padding-top: 50px;
+            padding-left: 0px;
+            display: inline-block;
+            width: 100%;
+        }
+        .footer a{
+            padding-left: 15px;
+        }
+        .footer p{
+            align-items: center;
+            float:inline-end;
+            font-family: "Roboto", serif;       
+            font-size: 0.9rem; 
+            margin-right: 1rem;
+        }
+        /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .top-nav{
+        place-self: center;
+    }
+    .con-nav{
+        display: none;
+    }
+    .logo-nav{
+        padding: 0;
+    }
+    .logo-nav img{
+        height: 25vh;
+    }
+    .header{
+        padding-left: 0;
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+    .header p{
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    .sub-header{
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+    .sub-header p{
+        font-family: "Open Sans", serif;
+        font-size: 0.8rem;
+            
+    }
+    .horizontal{
+        border: solid white 1px;
+        margin-left: 0;
+        margin-right: 1rem;
+        margin-top: 10px;
+        width: 50%;
+        float: right;
+
+    }
+    .soundtracks{
+            padding-right: 0;
+            padding-top: 0px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 1rem  ;
+        }
+        .soundtracks p{
+            font-family: "Nunito Sans", serif;
+            text-align:right;
+            font-size: 0.7rem;
+        }
+        .music-video-short{
+            padding-left: 0;
+            padding-top: 0;
+            float: right;
+            margin-right: 1.7rem;
+            margin-top: 1rem;
+            
+        }
+        .music-video-short img{
+            filter: brightness(90%);
+            border-radius: 15px;
+            border: solid 2px;
+            height: 15vh;
+
+        }
+        .vid-title{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 110px;
+            margin-right: 1rem;
+        }
+        .vid-title p{
+            font-family: "Roboto", serif;
+            font-size: 0.8rem;
+        }
+        .footer p{
+            display: none;
+        }
+        .footer{
+            padding-top: 6rem;
+            padding-left: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+        .footer a{
+            padding-left: 15px;
+        }
+        .footer img{
+            height: 3.5vh;
+        }
+   
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 769px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   
+}
+    </style>
+</head>
+<body>
+    
+    <div class="top-nav">
+        <div class="logo-nav">
+            <img src="images/ive-logo-white.png" alt="IVE LOGO" height="170px">
+        </div>
+        <div class="con-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="profiles.html">PROFILES</a></li> 
+            <li><a href="discography.html">DISCOGRAPHY</a></li>
+            <li><a href="music-video.html">MUSIC VIDEO</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </div>
+        
+    </div>
+    <div class="header">
+        <p>ELEVEN</p>
+    </div>
+    <div class="sub-header">
+         <p>2024.11.8 FRI 2PM (KST)</p>
+    </div>
+    <div class="horizontal"></div>
+    <div class="soundtracks">
+        <p>Supernova Love <br>
+      Supernova Love (Extended Mix)</p>
+        
+    </div>
+    <div class="music-video-short">
+        <a href=""><img src="images/LOVE DIVE/GROUP/group-2.jpg" alt="" height="130px"></a>
+    </div>
+    <div class="vid-title">
+        <p>IVE 아이브 SUMMER FESTA MV</p>
+    </div>
+    <div class="footer">
+        <a href=""><img src="images/sns_facebook.png" height="25px"></a>
+        <a href=""><img src="images/sns_instagram.png" height="25px"></a>
+        <a href=""><img src="images/sns_tiktok.png" height="25px"></a>
+        <a href=""><img src="images/sns_twitter.png" height="25px"></a>
+        <a href=""><img src="images/sns_youtube.png" height="25px"></a>
+        <p>Copyright © Sample Site, Starship Entertainment. All rights reserved.</p>
+    </div>
+    <video id="background-video" src="accendio-background.webm" alt=""  autoplay loop muted></video>
+</body>
+</html>
